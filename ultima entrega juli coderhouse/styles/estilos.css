@@ -1,0 +1,300 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/** 
+font-family: 'Russo One', sans-serif; 
+font-family: 'Jomolhari', serif;
+**/
+
+.padre{
+    display: flex;
+    flex-flow: column wrap;
+    font-family: 'Russo One', sans-serif;
+    background-color: rgba(0, 0, 0, 0.88);
+}
+.logo{
+    height: 150px;
+    float: left;
+    margin-left: 2%;
+    margin: 9px 0px 9px 10px;
+    border-radius: 20px;
+}
+.navbar{
+    display: flex;
+    flex-flow: row wrap;
+    height: 150px;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    font-size: calc(0.5em + 1vw);
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    text-shadow: red 0 -2px;
+}
+nav ul li a{
+    margin: 30px;
+    color: aliceblue;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+main{
+    background-color: rgb(34, 9, 9);
+    height: 77.1vh;
+    background-image: url(../assets/img/fondo.webp);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.hero{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.fotoControlRoom{
+    display: flex;
+    flex-direction: row wrap;
+    width: 55%;
+    border-radius: 40px;
+    margin: 6% 20% 0% 10%;
+}
+.fotoPin{
+    display: flex;
+    flex-direction: row wrap;
+    width: 60%;
+    border-radius: 40px;
+    margin: 6% 20% 0% 20%;
+;
+}
+h1{
+    display: flex;
+    flex-flow: row wrap;
+    color: aliceblue;
+    font-family: 'Russo One', sans-serif;
+    font-size: calc(0.09em + 2vw);
+    text-shadow: red 0 -2px;
+    width: 50%;
+    margin-left: 4%;
+}
+.redes{
+    display: flex;
+    justify-content: center;
+    flex-direction: row wrap;
+    align-items: center;
+}
+#instagram{
+    width: 80px;
+    margin-right: 20px;
+
+}
+#youtube{
+    width: 122px;
+    margin-right: 20px;
+
+}
+#whatsapp{
+    width: 82px;
+    border-radius: 10px;
+    
+}
+footer{
+    display: flex;
+    justify-content: right;
+    height: 47px;
+    background-color: rgba(0, 0, 0, 0.88);
+    color: aliceblue;
+}
+footer p{
+    font-size: calc(0em + 1vw);
+    padding: 12px 30px 0px 0px;
+    text-shadow: red 0 -2px;
+}
+
+/* HOOVER */
+.link a{
+    text-decoration: none;
+    position: relative;
+}
+
+.link a:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: rgb(255, 30, 30);
+    /*animacion de derecha a izquierda*/
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+}
+.link a:hover:after {
+    /*animacion de derecha a izquierda*/
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+form.contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(165, 42, 42, 0.186);
+    box-sizing: border-box;
+    margin-top: 60px;
+    margin-left: 9.5%;
+    border-radius: 20px;
+    width: 80%;
+}
+section form input{
+    margin-bottom: 20px;
+    font-family: 'Russo One', sans-serif;
+}
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+    font-family: 'Russo One', sans-serif;
+}
+.button{
+    padding: 20px;
+    margin-top: 40px;
+    color: brown;
+    font-weight: bold;
+    background-color:rgba(179, 174, 174, 0.299);
+    color: #fff;
+    background-color: #730000;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+.button:hover{
+    cursor: pointer;
+    background-color: #3e8e41
+}
+.button:active{
+    background-color: #422b2b;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+.redesContacto{
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    margin-top: 160px;
+    margin-left: 700px;
+}
+.fotoSala{
+    display: flex;
+    flex-direction: row wrap;
+    width: 82%;
+    border-radius: 40px;
+    margin: 10%
+}
+.fotoTv{
+    display: flex;
+    flex-direction: row wrap;
+    width: 82%;
+    border-radius: 40px;
+    margin: 10%
+}
+.textoSala{
+    display: flex;
+    width: 20%;
+}
+.servicios{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 2% 0% 6% 15%
+}
+.listaServicios{
+    display: flex;
+    flex-flow: row wrap;
+    color: aliceblue;
+    font-family: 'Russo One', sans-serif;
+    font-size: 2rem;
+    text-shadow: red 0 -2px;
+    width: 100%;
+    margin-left: 35%;
+    margin-bottom: 8.7%;
+}
+.galeriaTitulo{
+    margin: 1%;
+}
+.equiposTitulo{
+    margin: 1%;
+}
+.container{
+    margin: auto;
+    background-color: rgba(166, 1, 1, 0.292);
+    width: 850px;
+    padding: 10px;
+}
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+ul.slider{
+    position:relative;
+    height: 300px;
+    margin-left: 440px;
+}
+
+ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background:rgba(129, 27, 27, 0.555);
+}
+
+ul.slider li img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+ul.slider li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+}
+
+ul.slider li:target {
+    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+.menu{
+    text-align: center;
+    margin: 20px;
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+.menu li a{
+    display: inline-block;
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    background-color: rgba(59, 6, 249, 0.331);
+    margin-top:20px;
+    padding: 10px;
+    width: 10px;
+    height: 10px;
+    font-size: 10px;
+    border-radius: 100%;
+}
+.tours{
+    margin: 100px 100px 100px 200px;
+    color: #730000;
+    font-size: 4rem;
+    text-shadow: red 0 -2px;
+}
+
